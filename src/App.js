@@ -113,7 +113,7 @@ class App extends Component{
             <h1>{user.username}'s notes app</h1>
             <AddNote addNote={this.addNote} />
             <NotesList notes={this.state.notes} deleteNote={this.deleteNote} />
-            <button onClick={signOut} style={styles.addButton}>sign out</button>
+            <button onClick={signOut} style={styles.signOutButton}>sign out</button>
           </div>
         )}
       </Authenticator>
@@ -128,6 +128,7 @@ const styles={
   form:{display:'flex',marginBottom:15},
   input:{flexGrow:2,border:'none',backgroundColor:'#ddd',padding:12,fontSize:18},
   addButton:{backgroundColor:'black',color:'white',outline:'none',padding:12,fontSize:18},
+  signOutButton:{backgroundColor:'green',color:'white',width:420,padding:12,fontSize:17},
   note:{display:'flex',justifyContent:'space-between',alignItems:'center',fontSize:22,marginBottom:15},
   deleteButton:{fontSize:18,fontWeight:'bold'}
 }
